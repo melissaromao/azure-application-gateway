@@ -1,0 +1,41 @@
+.terraform/
+.terraform.d/
+
+# Estado e planos locais do Terraform
+*.tfstate
+*.tfstate.*
+*.tfstate.lock.info
+*.tfplan
+tfplan
+
+# Variáveis que podem conter credenciais ou configurações locais
+terraform.tfvars
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Arquivos de configuração e logs locais do Terraform
+.terraformrc
+terraform.rc
+crash.log
+crash.*.log
+
+# Credenciais, chaves e certificados
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Artefatos gerados pela aplicação
+app.py.gz.b64
+
+# Arquivos temporários do sistema e editores
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
